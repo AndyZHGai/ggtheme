@@ -23,7 +23,7 @@ theme_pub <- function(base_size = 14, base_family = "sans") {
             axis.title = element_text(face = "bold", size = rel(1)),
             axis.title.y = element_text(angle = 90, vjust = 2),
             axis.title.x = element_text(vjust = -0.2),
-            axis.text = element_text(),
+            axis.text = element_text(face = "bold"),
             axis.line.x = element_line(colour = "black"),
             axis.line.y = element_line(colour = "black"),
             axis.ticks = element_line(),
