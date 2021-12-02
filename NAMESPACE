@@ -2,6 +2,8 @@
 
 export(scale_colour_pub)
 export(scale_fill_pub)
+export(theme_axis_x0)
+export(theme_axis_x45)
 export(theme_grid)
 export(theme_pub)
 export(theme_size)
