@@ -4,12 +4,7 @@
 \alias{theme_prism}
 \title{GraphPad Prism themes}
 \usage{
-theme_prism(
-  base_size = 16,
-  base_family = "Times New Roman",
-  angle = 45,
-  border = FALSE
-)
+theme_prism(base_size = 16, base_family = "serif", angle = 45, border = FALSE)
 }
 \arguments{
 \item{base_size}{`numeric`. Base font size, given in `"pt"`.}
