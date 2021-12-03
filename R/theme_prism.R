@@ -106,7 +106,7 @@ theme_prism <- function(base_size = 16,
 
     strip.background =   element_blank(),
     strip.text =         element_text(colour = "black",
-                                      size = rel(1),
+                                      size = rel(0.9),
                                       margin = margin(base_size / 2.5, base_size / 2.5,
                                                       base_size / 2.5, base_size / 2.5)),
     strip.text.x =       element_text(margin = margin(b = base_size / 3)),
