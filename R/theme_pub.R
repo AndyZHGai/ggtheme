@@ -3,6 +3,8 @@
 #' @param base_size the default value is 14
 #' @param base_family the default value is "serif"
 #' @param border `logical`. Should a border be drawn around the plot?
+#' @param angle `integer`. Angle of x_axis text in degrees.
+#' One of: `-30, 45, 90, 270`.
 #'
 #' @return
 #' @export

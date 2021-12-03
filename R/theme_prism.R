@@ -3,7 +3,7 @@
 #' @param base_size `numeric`. Base font size, given in `"pt"`.
 #' @param base_family `string`. Base font family, default is `"Times New Roman"`.
 #' @param angle `integer`. Angle of x_axis text in degrees.
-#' One of: `0, 45, 90, 270`.
+#' One of: `-30, 45, 90, 270`.
 #' @param border `logical`. Should a border be drawn around the plot?
 #' Clipping will occur unless e.g. `coord_cartesian(clip = "off")` is used.
 #'
