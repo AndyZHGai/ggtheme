@@ -1,5 +1,4 @@
-#' Prism themes
-#' GraphPad Prism.
+#' GraphPad Prism themes
 #'
 #' @param base_size `numeric`. Base font size, given in `"pt"`.
 #' @param base_family `string`. Base font family, default is `"Times New Roman"`.
@@ -10,15 +9,12 @@
 #'
 #' @return Returns a list-like object of class _theme_.
 #'
-#' @example inst/examples/ex-theme_prism.R
-#'
 #' @export
 theme_prism <- function(base_size = 16,
                         base_family = "Times New Roman",
                         angle = 45,
                         border = FALSE) {
   base_fontface = "bold"
-
   # Ensure x axis text is at a sensible angle
   angle <- angle[1]
   if(!angle %in% c(-30, 0, 45, 90, 270))
@@ -92,7 +88,7 @@ theme_prism <- function(base_size = 16,
     legend.key.size =    unit(1.2, "lines"),
     legend.key.height =  NULL,
     legend.key.width =   unit(base_size * 1.8, "pt"),
-    legend.text =        element_text(size = rel(0.8), face = "bold"),
+    legend.text =        element_text(size = rel(0.8)),
     legend.text.align =  NULL,
     legend.title =       element_blank(),
     legend.title.align = NULL,
