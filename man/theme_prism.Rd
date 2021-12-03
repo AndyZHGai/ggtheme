@@ -12,7 +12,7 @@ theme_prism(base_size = 16, base_family = "serif", angle = 45, border = FALSE)
 \item{base_family}{`string`. Base font family, default is `"Times New Roman"`.}
 
 \item{angle}{`integer`. Angle of x_axis text in degrees.
-One of: `0, 45, 90, 270`.}
+One of: `-30, 45, 90, 270`.}
 
 \item{border}{`logical`. Should a border be drawn around the plot?
 Clipping will occur unless e.g. `coord_cartesian(clip = "off")` is used.}

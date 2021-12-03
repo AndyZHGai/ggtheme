@@ -22,7 +22,6 @@ theme_prism <- function(base_size = 16,
                  paste(c(-30, 0, 45, 90, 270), collapse=", ")),
          ".\nFor other angles, use the guide_axis() function in ggplot2 instead",
          call. = FALSE)
-
   # Draw border or not
   if(!is.logical(border)) {
     stop("border must be either: TRUE or FALSE")
@@ -36,7 +35,6 @@ theme_prism <- function(base_size = 16,
       axis.line <- element_line()
     }
   }
-
   t <- theme(
     # Base elements (to be inherited by other elements)
     line = element_line(colour = "black", size = 1, linetype = 1, lineend = "square"),
@@ -76,12 +74,12 @@ theme_prism <- function(base_size = 16,
                                       margin = margin(l = base_size * 0.6),
                                       vjust = 0),
 
-    legend.background =  element_blank(),
+    legend.background =  element_rect(fill = "transparent", colour = NA),
     legend.spacing =     unit(base_size, "pt"),
     legend.spacing.x =   NULL,
     legend.spacing.y =   NULL,
     legend.margin =      margin(0, 0, 0, 0),
-    legend.key =         element_blank(),
+    legend.key =         element_rect(fill = "transparent", colour = NA),
     legend.key.size =    unit(1.2, "lines"),
     legend.key.height =  NULL,
     legend.key.width =   unit(base_size, "pt"),
@@ -97,7 +95,7 @@ theme_prism <- function(base_size = 16,
     legend.box.background = element_blank(),
     legend.box.spacing = unit(base_size, "pt"),
 
-    panel.background = element_rect(fill = NA, colour = NA),
+    panel.background = element_rect(fill = "transparent", colour = NA),
     panel.border =       panel.border,
     panel.grid =         element_blank(),
     panel.grid.minor =   element_blank(),
@@ -120,7 +118,7 @@ theme_prism <- function(base_size = 16,
     strip.switch.pad.grid = unit(base_size / 4, "pt"),
     strip.switch.pad.wrap = unit(base_size / 4, "pt"),
 
-    plot.background =    element_rect(fill = NA, colour = NA),
+    plot.background =    element_rect(fill = "transparent", colour = NA),
     plot.title =         element_text(size = rel(1.2),
                                       hjust = 0.5, vjust = 1,
                                       margin = margin(b = base_size)),
@@ -131,9 +129,8 @@ theme_prism <- function(base_size = 16,
                                       hjust = 1, vjust = 1,
                                       margin = margin(t = base_size / 2)),
     plot.caption.position = "panel",
-    plot.tag =           element_text(size = rel(1.8), family = "serif",
+    plot.tag =           element_text(size = 25, family = "serif",
                                       hjust = 0, vjust = -1),
-    #plot.tag.position =  'topleft',
     plot.margin =        margin(rep(base_size/2, 4)),
     complete = TRUE
   )

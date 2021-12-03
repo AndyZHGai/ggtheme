@@ -4,12 +4,17 @@
 \alias{theme_pub}
 \title{ggplot theme for publication ready Plots}
 \usage{
-theme_pub(base_size = 14, base_family = "sans")
+theme_pub(base_size = 14, base_family = "serif", border = FALSE, angle = 0)
 }
 \arguments{
 \item{base_size}{the default value is 14}
 
-\item{base_family}{the default value is "sans"}
+\item{base_family}{the default value is "serif"}
+
+\item{border}{`logical`. Should a border be drawn around the plot?}
+
+\item{angle}{`integer`. Angle of x_axis text in degrees.
+One of: `-30, 45, 90, 270`.}
 }
 \value{
 
@@ -23,5 +28,5 @@ gglm(group = "Species", label.y = 0.99) + ggtheme::theme_pub() +
 ggprism::scale_color_prism(palette = "floral")
 }
 \author{
-Koundinya Desiraju
+Zhonghui Gai
 }
