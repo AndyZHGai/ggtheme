@@ -11,7 +11,7 @@
 #'
 #' @export
 theme_prism <- function(base_size = 16,
-                        base_family = "Times New Roman",
+                        base_family = "serif",
                         angle = 45,
                         border = FALSE) {
   base_fontface = "bold"
@@ -134,7 +134,7 @@ theme_prism <- function(base_size = 16,
     plot.tag =           element_text(size = rel(1.8), family = "serif",
                                       hjust = 0, vjust = -1),
     #plot.tag.position =  'topleft',
-    plot.margin =        margin(rep(5, 4)),
+    plot.margin =        margin(rep(base_size/2, 4)),
     complete = TRUE
   )
 }
