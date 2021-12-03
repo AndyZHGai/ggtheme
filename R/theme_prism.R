@@ -46,9 +46,6 @@ theme_prism <- function(base_size = 16,
                         lineheight = 0.9, hjust = 0.5, vjust = 0.5, angle = 0,
                         margin = margin(), debug = FALSE),
 
-    # Prism custom theme elements
-    prism.ticks.length = unit(base_size / 5, "pt"),
-
     # Normal ggplot2 theme elements
     axis.line =          axis.line,
     axis.line.x =        NULL,
